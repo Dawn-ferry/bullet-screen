@@ -1,0 +1,104 @@
+ 
+        body{
+           perspective:400px
+            
+           
+        }
+        .box{
+        	
+            width: 500px;
+            height: 300px;
+            /* border: 1px solid red; */
+            position: absolute; 
+            top: 200px;    
+            left: 200px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: all 2s;
+            animation: run 15s  linear infinite;
+           
+        }
+        @keyframes run{
+            0%{
+                transform: rotateY(0deg) ;
+
+            }
+            25%{
+                transform: rotateY(90deg) ;
+            }
+            50%{
+                transform: rotateY(180deg) ;
+
+            }
+            75%{
+                transform: rotateY(270deg) ;
+
+            }
+            100%{
+                transform: rotateY(360deg) ;
+  
+            }
+        }
+        
+        .box li{
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box li img{
+        	width: 100%;
+			height:100%;
+			transform: rotateY(180deg);
+        }
+        .box li:nth-child(1){
+            transform: rotateY(0deg) translateZ(600px);
+            
+        }
+        .box li:nth-child(2){
+            transform: rotateY(60deg) translateZ(600px);
+      
+
+        }
+        .box li:nth-child(3){
+            transform: rotateY(120deg) translateZ(600px);
+       
+
+        }
+        .box li:nth-child(4){
+            transform: rotateY(180deg) translateZ(600px);
+           
+        }
+        .box li:nth-child(5){
+            transform: rotateY(240deg) translateZ(600px);
+           
+
+        }
+        .box li:nth-child(6){
+            transform: rotateY(300deg) translateZ(600px);
+           
+        }
+        .box li:nth-child(7){
+            transform: rotateY(360deg) translateZ(600px);
+            
+
+        }
+        /*.box li:nth-child(8){
+            transform: rotateY(250deg) translateZ(600px);
+            
+
+        }
+        .box li:nth-child(9){
+            transform: rotateY(286deg) translateZ(600px);
+          
+
+        }
+        .box li:nth-child(10){
+            transform: rotateY(322deg) translateZ(600px);
+           
+
+        }
+      */
+       
+        
